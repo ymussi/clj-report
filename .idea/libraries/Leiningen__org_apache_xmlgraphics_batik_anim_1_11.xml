@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Leiningen: org.apache.xmlgraphics/batik-anim:1.11">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/batik-anim/1.11/batik-anim-1.11.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
