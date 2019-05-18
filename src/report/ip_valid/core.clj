@@ -1,6 +1,6 @@
-(ns report.core
+(ns report.ip_valid.core
   (:use clj-pdf.core)
-  (:require [data.resolvers :as faker]))
+  (:require [report.ip_valid.resolvers :as faker]))
 
 (pdf
   [
@@ -37,6 +37,7 @@
    [:table {:header [{:background-color [128 128 128]} "Campo" "Resultado"] :cellSpacing 20}
     ["Country" (:country (faker/geocode))]
     ["Address" (:address (faker/geocode))]]
+
    ]
 
   "report_consultas.pdf")

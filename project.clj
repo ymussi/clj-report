@@ -5,8 +5,9 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [clj-pdf "2.3.4"]
-                 [faker "0.2.2"]]
-  :main report.core
-  :aot [report.core]
-  :repl-options {:init-ns report.core})
+                 [faker "0.2.2"]
+                 [clj-http "3.10.0"]]
+  :main report.ip_valid.core
+  :aot [report.ip_valid.core]
+  :repl-options {:init-ns report.ip_valid.core})
 
