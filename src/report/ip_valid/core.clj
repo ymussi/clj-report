@@ -21,9 +21,9 @@
 
    [:heading
     {:style
-     {:size 15 :align :center}} "Captalys Platform - Resultados da consulta - " (:ip_valid (faker/tipo-consulta))]
+     {:size 15 :align :center}} " - Resultados da consulta - " (:ip_valid (faker/tipo-consulta))]
 
-   [:paragraph {:size 15 :cellSpacing 20} "\n1 - Informações da Consulta"]
+   [:paragraph {:size 15 :cellSpacing 20} "\n1 - Campo 1"]
 
    [:table {:header [{:background-color [128 128 128]} "Campo" "Resultado"] :cellSpacing 20}
     ["Country" (:country (faker/geocode))]
@@ -32,7 +32,7 @@
     ["City" (:city (faker/geocode))]
     ["BlockList" (:blocklist (faker/geocode))]]
 
-   [:paragraph {:size 15 :cellSpacing 20} "\n1 - Mais informações"]
+   [:paragraph {:size 15 :cellSpacing 20} "\n1 - Campo 2"]
 
    [:table {:header [{:background-color [128 128 128]} "Campo" "Resultado"] :cellSpacing 20}
     ["Country" (:country (faker/geocode))]
