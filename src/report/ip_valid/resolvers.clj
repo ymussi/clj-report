@@ -65,3 +65,16 @@
                        }))
 
 
+(defn base_64_image
+  []
+  "")
+
+(def ^:private body-osas
+  {:body (json/generate-string {:Base64  base_64_image})
+                      :content-type :json
+                      :as :json
+                      :accept :json})
+
+(defn request-test
+  []
+  (client/post "http://homologacao.ellosecm.com.br/QuodApi/api/cnh"))
